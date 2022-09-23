@@ -16,7 +16,7 @@
 		"ui": "workspace:*"
 	},
 	"devDependencies": {
-		"@playwright/test": "1.25.2",
+		"@playwright/test": "1.26.0",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/package": "next",
 		"@sveltejs/kit": "next",
