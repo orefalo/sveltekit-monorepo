@@ -44,7 +44,7 @@ $ pnpm dev
 ### Run histoire (storybook better clone)
 
 ```shell
-$ pnpm --filter ui story:dev
+$ pnpm --filter comp1 story:dev
 ```
 
 ### Run unit tests
@@ -53,3 +53,18 @@ $ pnpm --filter ui story:dev
 $ pnpm test
 ```
 
+## Remarks
+- yarn & npm will break, you MUST use **pnpm** - the best package manager
+- There are two workspaces defined in **pnpm-workspace.yaml**
+
+**tooling** for common utils and configs 
+
+**packages** for the application sub-projects.
+
+- When you creating a new sub-project, you would typically copy/paste comp1
+- Each project's package.json name must match the folder name (don't forget to rerun `pnpm i`)
+- Pay close attention to the scripts at each package.json level and turbo.json
+- Also check the .* files, which are the fondation for reuse and proper configuration
+- I could not figure how to generalize the tsconfig.json file
+- I am **not** done with the final packaging and playwright requires some tuning
+- this repo was forked from https://github.com/sw-yx/sveltekit-monorepo, thank you
