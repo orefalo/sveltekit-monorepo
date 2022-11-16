@@ -8,6 +8,9 @@
 		"check": {
 			"outputs": []
 		},
+		"test": {
+			"outputs": []
+		},
 		"lint": {
 			"outputs": []
 		},

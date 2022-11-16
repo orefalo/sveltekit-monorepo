@@ -5,6 +5,7 @@
 	"scripts": {
 		"build": "turbo run build",
 		"start": "turbo run dev --parallel",
+		"test": "turbo run test",
 		"dev": "pnpm run start",
 		"check": "turbo run check",
 		"lint": "turbo run lint",
