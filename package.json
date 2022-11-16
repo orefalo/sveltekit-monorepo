@@ -10,12 +10,15 @@
 		"check": "turbo run check",
 		"lint": "turbo run lint",
 		"format": "prettier --write .",
-		"lsworkspaces": "pnpm m ls --json --depth=-1"
+		"lsworkspaces": "pnpm m ls --json --depth=-1",
+		"mrproper": "git clean -fXd",
+		"changeset": "npx changeset"
 	},
 	"devDependencies": {
 		"eslint-config-custom": "workspace:0.0.0",
 		"prettier-config-custom": "workspace:0.0.0",
-		"turbo": "1.6.3"
+		"turbo": "1.6.3",
+		"@changesets/cli": "2.23.1"
 	},
 	"engines": {
 		"npm": ">=999",

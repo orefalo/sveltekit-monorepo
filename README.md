@@ -6,19 +6,21 @@ This is my starter for a sveltekit monorepo with 2022 tech.
 
 This project demonstrates the following concepts for Sveltekit:
 
-* [pnpm](https://pnpm.io/) monorepo to breakup a large application into sub projects (yarn & npm are configured to be rejected)
+-   [pnpm](https://pnpm.io/) monorepo to breakup a large application into sub projects (yarn & npm are configured to be rejected)
 
-* Super fast build system based on [TurboRepo](https://turbo.build/)
+-   Super fast build system based on [TurboRepo](https://turbo.build/)
 
-* String typing using [Typescript](https://www.typescriptlang.org/)
+-   String typing using [Typescript](https://www.typescriptlang.org/)
 
-* Visual testing using [Histoire](https://histoire.dev/)
+-   Visual testing using [Histoire](https://histoire.dev/)
 
-* Unit Testing usin [Playwright](https://playwright.dev/)
+-   [TODO] Unit Testing usin [Playwright](https://playwright.dev/)
 
-* Centralized management of [eslint](https://eslint.org/), [prettier](https://prettier.io/) configurations
+-   Centralized management of SvelteKit specific [eslint](https://eslint.org/), [prettier](https://prettier.io/) configurations
 
-* Final bundling using [Docker](https://www.docker.com/)
+-   Automatic changelog and versioning using [Changesets](https://github.com/changesets/changesets)
+
+-   [TODO] Final bundling using [Docker](https://www.docker.com/)
 
 ## Demo
 
@@ -54,17 +56,19 @@ $ pnpm test
 ```
 
 ## Remarks
-- yarn & npm will break, you MUST use **pnpm** - the best package manager
-- There are two workspaces defined in **pnpm-workspace.yaml**
 
-**tooling** for common utils and configs 
+-   yarn & npm will break, you MUST use **pnpm** - the best package manager
+-   There are two workspaces defined in **pnpm-workspace.yaml**
+
+**tooling** for common utils and configs
 
 **packages** for the application sub-projects.
 
-- When you creating a new sub-project, you would typically copy/paste comp1
-- Each project's package.json name must match the folder name (don't forget to rerun `pnpm i`)
-- Pay close attention to the scripts at each package.json level and turbo.json
-- Also check the .* files, which are the fondation for reuse and proper configuration
-- I could not figure how to generalize the tsconfig.json file
-- I am **not** done with the final packaging and playwright requires some tuning
-- this repo was forked from https://github.com/sw-yx/sveltekit-monorepo, thank you
+-   When you creating a new sub-project, you would typically copy/paste comp1
+-   Each project's package.json name must match the folder name (don't forget to rerun `pnpm i`)
+-   Pay close attention to the scripts at each package.json level and turbo.json
+-   Also check the .\* files, which are the fondation for reuse and proper configuration
+-   I could not figure how to generalize the tsconfig.json file
+-   I am **not** done with the final packaging and playwright requires some tuning
+-   this repo was forked from https://github.com/sw-yx/sveltekit-monorepo, thank you
+-   todo: add commitlint, husky, emojies
