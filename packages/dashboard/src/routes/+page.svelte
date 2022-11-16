@@ -16,12 +16,6 @@
 	> to clone this.
 </p>
 
-<p>
-	Live demo is at <a href="https://sveltekit-monorepo-ui.netlify.app/"
-		>https://sveltekit-monorepo-ui.netlify.app/</a
-	> to see this.
-</p>
-
 <style>
 	.highlight {
 		border: 5px solid salmon;
