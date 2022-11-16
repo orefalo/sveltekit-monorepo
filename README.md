@@ -2,10 +2,10 @@
 
 This is my starter for a monorepo with 2022 tech:
 
-- SvelteKit
-- [Turborepo](https://www.swyx.io/turborepo-why) 
-- [Histoire](https://histoire.dev/)
-- [pnpm](https://pnpm.io) - `brew install pnpm`
+-   SvelteKit
+-   [Turborepo](https://www.swyx.io/turborepo-why)
+-   [Histoire](https://histoire.dev/)
+-   [pnpm](https://pnpm.io) - `brew install pnpm`
 
 ## Demo
 
@@ -15,28 +15,26 @@ https://sveltekit-monorepo-ui.netlify.app/
 
 ![image](https://user-images.githubusercontent.com/6764957/187062740-f908ebd6-66d2-43c0-a84c-0ea5b330e153.png)
 
-
-
 ## What's inside?
 
 ### Apps and Packages
 
-- Apps
-  - `dashboard`: a SvelteKit app. This is the end product that end users should be seeing. Feel free to clone this if building more.
-  - `ui`: a stub Svelte component library usable by the `dashboard` app
-    - with a `histoire` storybook you can also run for dev, or publish
-    - it is also set up for you to publish the component library with `svelte-package`
-- Packages
-  - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-  - `tsconfig`: `tsconfig.json`s used throughout the monorepo
+-   Apps
+    -   `dashboard`: a SvelteKit app. This is the end product that end users should be seeing. Feel free to clone this if building more.
+    -   `ui`: a stub Svelte component library usable by the `dashboard` app
+        -   with a `histoire` storybook you can also run for dev, or publish
+        -   it is also set up for you to publish the component library with `svelte-package`
+-   Packages
+    -   `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+    -   `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
 ### Utilities
 
 This turborepo has some additional tools already setup for you:
 
-- We have opted for using jsdoc types for now, but that opinion is open for debate.
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+-   We have opted for using jsdoc types for now, but that opinion is open for debate.
+-   [ESLint](https://eslint.org/) for code linting
+-   [Prettier](https://prettier.io) for code formatting
 
 ## Setup
 
@@ -99,19 +97,19 @@ pnpx turbo link
 
 Learn more about the power of Turborepo:
 
-- [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
-- [Caching](https://turborepo.org/docs/core-concepts/caching)
-- [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+-   [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
+-   [Caching](https://turborepo.org/docs/core-concepts/caching)
+-   [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching)
+-   [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
+-   [Configuration Options](https://turborepo.org/docs/reference/configuration)
+-   [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
 
 ## Useful Links
 
-- using pnpm with netlify
-  - https://www.seancdavis.com/posts/use-pnpm-with-netlify/
-    - but results in `EEXIST: file already exists, mkdir '/dev/null'` error
-  - https://answers.netlify.com/t/using-pnpm-and-pnpm-workspaces/2759/19
-    - not so useful
-  - i think this is what solved it for me https://github.com/netlify/build/issues/1633
-- prior art: https://github.com/Brisklemonade/turbosvelte
+-   using pnpm with netlify
+    -   https://www.seancdavis.com/posts/use-pnpm-with-netlify/
+        -   but results in `EEXIST: file already exists, mkdir '/dev/null'` error
+    -   https://answers.netlify.com/t/using-pnpm-and-pnpm-workspaces/2759/19
+        -   not so useful
+    -   i think this is what solved it for me https://github.com/netlify/build/issues/1633
+-   prior art: https://github.com/Brisklemonade/turbosvelte
