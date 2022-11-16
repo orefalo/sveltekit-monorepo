@@ -5,17 +5,11 @@ importers:
   .:
     specifiers:
       eslint-config-custom: workspace:*
-      prettier: 2.7.1
-      prettier-plugin-svelte: 2.8.0
-      prettier-plugin-tailwindcss: 0.1.13
-      svelte: 3.53.1
+      prettier-config-custom: workspace:*
       turbo: 1.6.3
     devDependencies:
       eslint-config-custom: link:tooling/eslint-config-custom
-      prettier: 2.7.1
-      prettier-plugin-svelte: 2.8.0_nryolsexf6k3znhuh4uzpugsem
-      prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
-      svelte: 3.53.1
+      prettier-config-custom: link:tooling/prettier-config-custom
       turbo: 1.6.3
 
   packages/dashboard:
@@ -110,7 +104,19 @@ importers:
       svelte: 3.53.1
       typescript: 4.9.3
 
-  tooling/tsconfig:
+  tooling/prettier-config-custom:
+    specifiers:
+      prettier: 2.7.1
+      prettier-plugin-svelte: 2.8.0
+      prettier-plugin-tailwindcss: 0.1.13
+      svelte: 3.53.1
+    dependencies:
+      prettier: 2.7.1
+      prettier-plugin-svelte: 2.8.0_nryolsexf6k3znhuh4uzpugsem
+      prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
+      svelte: 3.53.1
+
+  tooling/tsconfig-config-custom:
     specifiers: {}
 
 packages:
@@ -2528,7 +2534,7 @@ packages:
     dependencies:
       prettier: 2.7.1
       svelte: 3.53.1
-    dev: true
+    dev: false
 
   /prettier-plugin-tailwindcss/0.1.13_prettier@2.7.1:
     resolution: {integrity: sha512-/EKQURUrxLu66CMUg4+1LwGdxnz8of7IDvrSLqEtDqhLH61SAlNNUSr90UTvZaemujgl3OH/VHg+fyGltrNixw==}
@@ -2537,13 +2543,13 @@ packages:
       prettier: '>=2.2.0'
     dependencies:
       prettier: 2.7.1
-    dev: true
+    dev: false
 
   /prettier/2.7.1:
     resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
-    dev: true
+    dev: false
 
   /pretty-hrtime/1.0.3:
     resolution: {integrity: sha512-66hKPCr+72mlfiSjlEB1+45IjXSqvVAIy6mocupoww4tBFE9R9IhwwUGoI4G++Tc9Aq+2rxOt0RFU6gPcrte0A==}
