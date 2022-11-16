@@ -10,6 +10,7 @@
 		"build": "turbo run build",
 		"start": "turbo run dev --parallel",
 		"dev": "pnpm run start",
+		"check": "turbo run check",
 		"lint": "turbo run lint",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\""
 	},
@@ -23,6 +24,7 @@
 	},
 	"engines": {
 		"npm": ">=7.0.0",
+		"pnpm": ">=7",
 		"node": ">=14.0.0"
 	},
 	"packageManager": "pnpm@7.12.1",
