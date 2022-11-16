@@ -2,10 +2,6 @@
 	"name": "my-turborepo",
 	"version": "0.0.0",
 	"private": true,
-	"workspaces": [
-		"packages/*",
-		"tooling/*"
-	],
 	"scripts": {
 		"build": "turbo run build",
 		"start": "turbo run dev --parallel",
@@ -20,10 +16,10 @@
 		"turbo": "1.6.3"
 	},
 	"engines": {
-		"npm": ">=7.0.0",
+		"npm": ">=999",
+		"yarn": ">=999",
 		"pnpm": ">=7",
-		"node": ">=14.0.0"
+		"node": ">=16"
 	},
-	"packageManager": "pnpm@7.12.1",
 	"license": "MIT"
 }
