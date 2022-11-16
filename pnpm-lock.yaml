@@ -4,58 +4,15 @@ importers:
 
   .:
     specifiers:
-      eslint-config-custom: workspace:*
-      prettier-config-custom: workspace:*
+      eslint-config-custom: workspace:0.0.0
+      prettier-config-custom: workspace:0.0.0
       turbo: 1.6.3
     devDependencies:
       eslint-config-custom: link:tooling/eslint-config-custom
       prettier-config-custom: link:tooling/prettier-config-custom
       turbo: 1.6.3
 
-  packages/dashboard:
-    specifiers:
-      '@playwright/test': 1.27.1
-      '@sveltejs/adapter-node': next
-      '@sveltejs/kit': next
-      '@sveltejs/package': next
-      '@types/node': 18.11.9
-      '@vitejs/plugin-basic-ssl': 0.1.2
-      autoprefixer: 10.4.13
-      eslint: 8.27.0
-      eslint-config-custom: workspace:*
-      postcss: 8.4.19
-      postcss-cli: 10.0.0
-      prettier-config-custom: workspace:*
-      svelte: 3.53.1
-      svelte-check: 2.9.2
-      svelte-preprocess: 4.10.7
-      tailwindcss: 3.2.4
-      typescript: 4.9.3
-      ui: workspace:*
-      vite: 3.2.4
-    dependencies:
-      ui: link:../ui
-    devDependencies:
-      '@playwright/test': 1.27.1
-      '@sveltejs/adapter-node': 1.0.0-next.100
-      '@sveltejs/kit': 1.0.0-next.549_svelte@3.53.1+vite@3.2.4
-      '@sveltejs/package': 1.0.0-next.1_7dvewpees4iyn2tkw2qzal77a4
-      '@types/node': 18.11.9
-      '@vitejs/plugin-basic-ssl': 0.1.2_vite@3.2.4
-      autoprefixer: 10.4.13_postcss@8.4.19
-      eslint: 8.27.0
-      eslint-config-custom: link:../../tooling/eslint-config-custom
-      postcss: 8.4.19
-      postcss-cli: 10.0.0_postcss@8.4.19
-      prettier-config-custom: link:../../tooling/prettier-config-custom
-      svelte: 3.53.1
-      svelte-check: 2.9.2_mocwzvuqzrhb37u7s4hjvvzl3i
-      svelte-preprocess: 4.10.7_mvbmsfnr3ibpjsbee6imjcb33m
-      tailwindcss: 3.2.4_postcss@8.4.19
-      typescript: 4.9.3
-      vite: 3.2.4_@types+node@18.11.9
-
-  packages/ui:
+  packages/comp1:
     specifiers:
       '@histoire/plugin-svelte': 0.11.7
       '@histoire/shared': 0.11.7
@@ -75,7 +32,7 @@ importers:
       '@histoire/plugin-svelte': 0.11.7_6ggcnk5p3catmwfdnbka5h7cti
       '@histoire/shared': 0.11.7_vite@3.2.4
       '@sveltejs/adapter-auto': 1.0.0-next.88
-      '@sveltejs/kit': 1.0.0-next.549_svelte@3.53.1+vite@3.2.4
+      '@sveltejs/kit': 1.0.0-next.550_svelte@3.53.1+vite@3.2.4
       '@sveltejs/package': 1.0.0-next.1_7dvewpees4iyn2tkw2qzal77a4
       eslint: 8.27.0
       eslint-config-custom: link:../../tooling/eslint-config-custom
@@ -86,6 +43,49 @@ importers:
       tslib: 2.4.1
       typescript: 4.9.3
       vite: 3.2.4
+
+  packages/dashboard:
+    specifiers:
+      '@playwright/test': 1.27.1
+      '@sveltejs/adapter-node': next
+      '@sveltejs/kit': next
+      '@sveltejs/package': next
+      '@types/node': 18.11.9
+      '@vitejs/plugin-basic-ssl': 0.1.2
+      autoprefixer: 10.4.13
+      comp1: workspace:*
+      eslint: 8.27.0
+      eslint-config-custom: workspace:*
+      postcss: 8.4.19
+      postcss-cli: 10.0.0
+      prettier-config-custom: workspace:*
+      svelte: 3.53.1
+      svelte-check: 2.9.2
+      svelte-preprocess: 4.10.7
+      tailwindcss: 3.2.4
+      typescript: 4.9.3
+      vite: 3.2.4
+    dependencies:
+      comp1: link:../comp1
+    devDependencies:
+      '@playwright/test': 1.27.1
+      '@sveltejs/adapter-node': 1.0.0-next.100
+      '@sveltejs/kit': 1.0.0-next.550_svelte@3.53.1+vite@3.2.4
+      '@sveltejs/package': 1.0.0-next.1_7dvewpees4iyn2tkw2qzal77a4
+      '@types/node': 18.11.9
+      '@vitejs/plugin-basic-ssl': 0.1.2_vite@3.2.4
+      autoprefixer: 10.4.13_postcss@8.4.19
+      eslint: 8.27.0
+      eslint-config-custom: link:../../tooling/eslint-config-custom
+      postcss: 8.4.19
+      postcss-cli: 10.0.0_postcss@8.4.19
+      prettier-config-custom: link:../../tooling/prettier-config-custom
+      svelte: 3.53.1
+      svelte-check: 2.9.2_mocwzvuqzrhb37u7s4hjvvzl3i
+      svelte-preprocess: 4.10.7_mvbmsfnr3ibpjsbee6imjcb33m
+      tailwindcss: 3.2.4_postcss@8.4.19
+      typescript: 4.9.3
+      vite: 3.2.4_@types+node@18.11.9
 
   tooling/eslint-config-custom:
     specifiers:
@@ -439,8 +439,8 @@ packages:
       rollup: 2.79.1
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.549_svelte@3.53.1+vite@3.2.4:
-    resolution: {integrity: sha512-seF93Epted0W49YF/AIfBCQdlrjRupVMlHSg7rV1T9nmwzFCyTQVUMmQ9zvPoY8dMIbixf6Eq6AseV43c+tHsA==}
+  /@sveltejs/kit/1.0.0-next.550_svelte@3.53.1+vite@3.2.4:
+    resolution: {integrity: sha512-kXRfYD4lWq9SxM76MWSlt95BrpjGM8wniPBEK9KsseVeNZ9sKvc2Ql8uFMuD4tOLKM2iRxmZJTT9rT1Em0OBjw==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true

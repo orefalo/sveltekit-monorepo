@@ -8,11 +8,12 @@
 		"dev": "pnpm run start",
 		"check": "turbo run check",
 		"lint": "turbo run lint",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"lsworkspaces": "pnpm m ls --json --depth=-1"
 	},
 	"devDependencies": {
-		"eslint-config-custom": "workspace:*",
-		"prettier-config-custom": "workspace:*",
+		"eslint-config-custom": "workspace:0.0.0",
+		"prettier-config-custom": "workspace:0.0.0",
 		"turbo": "1.6.3"
 	},
 	"engines": {
