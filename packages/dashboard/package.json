@@ -9,14 +9,15 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"test": "playwright test",
-		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write ."
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. src/",
+		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. src/ && eslint --ignore-path .gitignore src/"
 	},
 	"dependencies": {
 		"ui": "workspace:*"
 	},
 	"devDependencies": {
 		"eslint-config-custom": "workspace:*",
+		"prettier-config-custom": "workspace:*",
 		"@playwright/test": "1.27.1",
 		"@sveltejs/package": "next",
 		"@sveltejs/adapter-node": "next",

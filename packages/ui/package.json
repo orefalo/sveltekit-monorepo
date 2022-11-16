@@ -4,12 +4,12 @@
 	"main": "src/lib/index.js",
 	"license": "MIT",
 	"scripts": {
-		"olddev": "vite dev",
-		"start": "histoire dev",
+		"dev": "histoire dev",
 		"build": "svelte-kit sync && svelte-package",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
-		"lint": "eslint *.ts*",
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. src/",
+		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. src/ && eslint --ignore-path .gitignore src/",
 		"story:dev": "histoire dev",
 		"story:build": "histoire build",
 		"story:preview": "histoire preview"
@@ -22,6 +22,7 @@
 		"@sveltejs/package": "next",
 		"eslint": "8.27.0",
 		"eslint-config-custom": "workspace:*",
+		"prettier-config-custom": "workspace:*",
 		"histoire": "0.11.7",
 		"svelte": "3.53.1",
 		"svelte-check": "2.9.2",
