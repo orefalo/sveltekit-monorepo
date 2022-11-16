@@ -1,7 +1,6 @@
 <script lang="ts">
-	// histoire doesnt seem to export good types, sorry I tried to import them
-
-	export let Hst: any
+	import type { Hst as Histoire } from '@histoire/plugin-svelte'
+	export let Hst: Histoire
 </script>
 
 <Hst.Story title="Cars">
