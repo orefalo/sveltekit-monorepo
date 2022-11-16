@@ -1,22 +1,29 @@
 <script>
-  import { Button } from "ui";
+	import { Button } from 'comp1'
 </script>
-
-<style>
-  .highlight {
-    border: 5px solid salmon;
-  }
-</style>
 
 <h1>Welcome to swyx's SvelteKit Monorepo Starter!</h1>
 
 <p class="highlight">
-  This button below comes from a UI library!
-  <br />
-  <Button />
+	This button below comes from a UI library!
+	<br />
+	<Button />
 </p>
 
-<p>Visit <a href="https://github.com/sw-yx/sveltekit-monorepo">https://github.com/sw-yx/sveltekit-monorepo</a> to clone this.</p>
+<p>
+	Visit <a href="https://github.com/sw-yx/sveltekit-monorepo"
+		>https://github.com/sw-yx/sveltekit-monorepo</a
+	> to clone this.
+</p>
 
-<p>Live demo is at  <a href="https://sveltekit-monorepo-ui.netlify.app/">https://sveltekit-monorepo-ui.netlify.app/</a> to see this.</p>
+<p>
+	Live demo is at <a href="https://sveltekit-monorepo-ui.netlify.app/"
+		>https://sveltekit-monorepo-ui.netlify.app/</a
+	> to see this.
+</p>
 
+<style>
+	.highlight {
+		border: 5px solid salmon;
+	}
+</style>

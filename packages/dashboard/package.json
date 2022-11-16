@@ -13,7 +13,7 @@
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. src/ && eslint --ignore-path .gitignore src/"
 	},
 	"dependencies": {
-		"ui": "workspace:*"
+		"comp1": "workspace:*"
 	},
 	"devDependencies": {
 		"eslint-config-custom": "workspace:*",
